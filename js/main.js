@@ -95,6 +95,7 @@ $(window).scroll(function() {
     }
 });
 
+// Responsive Tab Functionality
 
 var $doc = $(document);
 var Tabs = {
