@@ -1,6 +1,11 @@
 .card {
   padding: 0 1.0rem;
   margin-bottom: 4.0rem;
+
+  @include MQ(L) {
+    padding: 0 2.0rem;
+    margin-bottom: 5.0rem;
+  }
 }
 
 .card-inner {
@@ -9,7 +14,12 @@
   cursor: pointer;
 
   .label {
-    padding-top: 1.5rem;
+    padding-top: 0.8rem;
+
+    h3 {
+      padding-top: 0.5rem;
+      font-size: 2.2rem;
+    }
   }
 
   .bg-img {
@@ -54,7 +64,7 @@
   &:hover {
     p {
       @include global-transition;
-      // opacity: 1;
+      opacity: 1;
     }
 
     .bg-img {
@@ -64,4 +74,25 @@
       }
     }
   }
+}
+
+.cook-block {
+  background: $color-black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+
+  @include MQ(XS) {
+    height: 100%;
+    padding: 0 10px;
+  }
+
+   p {
+    color: $color-white;
+    margin: auto;
+    display: flex;
+    font-size: 1.2rem;
+   }
 }

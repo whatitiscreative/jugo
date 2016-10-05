@@ -18,6 +18,7 @@
     "plumber": "^0.4.8"
   },
   "devDependencies": {
+    "gulp-livereload": "^3.8.1",
     "gulp-sourcemaps": "^1.6.0"
   },
   "scripts": {

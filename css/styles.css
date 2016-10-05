@@ -265,6 +265,8 @@ body { font-family: "FuturaStdMedium", sans-serif; font-style: normal; font-weig
 
 .yellow { color: #f5d687; }
 
+.fw-med { font-weight: 600; }
+
 h1, h2, h3, h4, h5 { margin: 0; }
 
 h1 { font-size: 3.4rem; font-style: normal; font-family: "EuclidFlexBold", sans-serif; }
@@ -463,9 +465,13 @@ img { max-width: 100%; height: auto; }
 
 .card { padding: 0 1.0rem; margin-bottom: 4.0rem; }
 
+@media only screen and (min-width: 1199px) { .card { padding: 0 2.0rem; margin-bottom: 5.0rem; } }
+
 .card-inner { background: #FFFFFF; padding: 1.5rem; cursor: pointer; }
 
-.card-inner .label { padding-top: 1.5rem; }
+.card-inner .label { padding-top: 0.8rem; }
+
+.card-inner .label h3 { padding-top: 0.5rem; font-size: 2.2rem; }
 
 .card-inner .bg-img { background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/Grilled Lamb Kabobs with Peach and Red Onion.jpg") no-repeat center center; background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/Grilled Lamb Kabobs with Peach and Red Onion.jpg") no-repeat center center; height: 178px; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; }
 
@@ -473,9 +479,15 @@ img { max-width: 100%; height: auto; }
 
 .card-inner .bg-img p { font-size: 1.8rem; color: #FFFFFF; display: -webkit-box; display: -ms-flexbox; display: flex; margin: auto; opacity: 0; position: relative; z-index: 10; font-family: "EuclidFlexBold", sans-serif; text-transform: uppercase; -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; }
 
-.card-inner:hover p { -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; }
+.card-inner:hover p { -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; opacity: 1; }
 
 .card-inner:hover .bg-img:before { -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; opacity: 1; }
+
+.cook-block { background: #231f20; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: center; padding: 10px; }
+
+@media only screen and (min-width: 768px) { .cook-block { height: 100%; padding: 0 10px; } }
+
+.cook-block p { color: #FFFFFF; margin: auto; display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 1.2rem; }
 
 header { background: #FFFFFF; height: 75px; left: 0; position: fixed; right: 0; top: 0; width: 100%; z-index: 1000; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -536,3 +548,5 @@ body { background: #FFFFFF; font-family: "FuturaStdMedium", sans-serif; }
 .recipes .sub { margin-bottom: 6.0rem; }
 
 .row.cheat-neg-margin { margin-bottom: 0 -1rem; }
+
+.border-top { border-top: 1px solid #231f20; }
