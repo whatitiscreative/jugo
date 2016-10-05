@@ -1,0 +1,147 @@
+// Media Queries
+// ------------------------------------------------------------------------------------------------
+
+// Mobile First
+// ------------------------------------------------------------------------------------------------
+
+@mixin MQ($canvas) {
+  @if $canvas == XXS {
+    @media only screen and (min-width: $XXS) {
+      @content;
+    }
+  }
+
+  @if $canvas == XS {
+    @media only screen and (min-width: $XS) {
+      @content;
+    }
+  }
+
+  @else if $canvas == S {
+    @media only screen and (min-width: $S) {
+      @content;
+    }
+  }
+
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) {
+      @content;
+    }
+  }
+
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) {
+      @content;
+    }
+  }
+
+  @else if $canvas == LM {
+    @media only screen and (min-width: $LM) {
+      @content;
+    }
+  }
+
+  @else if $canvas == XL {
+    @media only screen and (min-width: $XL) {
+      @content;
+    }
+  }
+
+  @else if $canvas == XXL {
+    @media only screen and (min-width: $XXL) {
+      @content;
+    }
+  }
+}
+
+// Min Width Examples
+// ------------------------------------------------------------------------------------------------
+
+// min-width: 768px - phone
+@include MQ(XS) {}
+
+
+// min-width: 992px - tablet portrait
+@include MQ(S) {}
+
+
+// min-width: 1025px - tablet landscape
+@include MQ(M) {}
+
+
+// min-width: 1199px - desktop
+@include MQ(L) {}
+
+
+// min-width: 1281px - desktop
+
+@include MQ(LM) {}
+
+
+// min-width: 1499px - desktop
+
+@include MQ(XL) {}
+
+// Max Width
+// ------------------------------------------------------------------------------------------------
+
+@mixin MAX($canvas) {
+  @if $canvas == XS {
+    @media only screen and (max-width: $XS) {
+      @content;
+    }
+  }
+
+  @else if $canvas == S {
+    @media only screen and (max-width: $S) {
+      @content;
+    }
+  }
+
+  @else if $canvas == M {
+    @media only screen and (max-width: $M) {
+      @content;
+    }
+  }
+
+  @else if $canvas == L {
+    @media only screen and (max-width: $L) {
+      @content;
+    }
+  }
+
+  @else if $canvas == LM {
+    @media only screen and (max-width: $LM) {
+      @content;
+    }
+  }
+
+
+  @else if $canvas == XL {
+    @media only screen and (max-width: $XL) {
+      @content;
+    }
+  }
+}
+
+// Max Width Examples
+// ------------------------------------------------------------------------------------------------
+
+// max-width: 767px - phone
+@include MAX(XS) {}
+
+// max-width: 991px - tablet portrait
+@include MAX(S) {}
+
+// max-width: 1024px - tablet landscape
+@include MAX(M) {}
+
+
+// max-width: 1198px - desktop
+@include MAX(L) {}
+
+// max-width: 1280px - desktop
+@include MAX(LM) {}
+
+// max-width: 1498px - desktop
+@include MAX(XL) {}

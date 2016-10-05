@@ -1,0 +1,37 @@
+//**
+// Project Settings
+//**
+
+// Consistent settings
+$br: 5px; // Border-radius
+$btn-br: 5px; // Button border-radius
+$font-size: 100%; // Global default font size
+$padding: 40px; // Padding and margins
+$line-height: 44px; // Consistent height for buttons, inputs etc.
+
+
+// $font-secondary:                    "Brown-Light", sans-serif;
+// $font-tertiary:                     "Brown-Regular", sans-serif;
+
+// Colors
+// ------------------------------------------------------------------------------------------------
+
+$color-white: #FFFFFF;
+$color-black: #231f20;
+$color-blue: #668ebd;
+$color-beige: #ece4df;
+$color-green: #9db891;
+$color-yellow: #f5d687;
+
+// Breakpoints
+// ------------------------------------------------------------------------------------------------
+$XXS: 479px;
+$XS: 768px;
+$S: 992px;
+$M: 1025px;
+$L: 1199px;
+$LM: 1281px;
+
+// large medium
+$XL: 1499px;
+$XXL: 1699px;

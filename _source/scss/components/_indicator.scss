@@ -1,0 +1,40 @@
+.scroll-ind {
+  position: relative;
+  cursor: pointer;
+  margin: 5.0rem auto 0 auto;
+  width: 0;
+  display: none;
+
+  @include MQ(M) {
+    display: inline-block;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 1.36rem;
+    top: 8px;
+    height: 5px;
+    width: 5px;
+    background: #FFF;
+    border-radius: 50%;
+    animation: scroll 1.8s infinite;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}

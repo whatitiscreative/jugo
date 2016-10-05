@@ -1,0 +1,162 @@
+//**
+// Buttons
+//**
+
+.btn {
+	@include global-transition;
+	background: transparent;
+	font-family: $font-tertiary-light;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px 0;
+	font-weight: 400;
+
+	@include MQ(L) {
+		margin: 0 auto;
+		width: 258px;
+	}
+
+	&.small {
+		height: 51px;
+
+		@include MQ(XS) {
+			margin: 0 auto;
+			width: 161px;
+		}
+	}
+
+	&.black {
+		border: 3px solid $color-black;
+		color: $color-black;
+		&:hover {
+			@include global-transition;
+			background: $color-black;
+			color: $color-white;
+		}
+	}
+
+	&.white {
+		border: 3px solid $color-white;
+		color: $color-white;
+
+		&:hover {
+			@include global-transition;
+			background: $color-white;
+			color: $color-black;
+		}
+	}
+
+}
+
+.download-btn {
+	display: flex;
+	justify-content: flex-end;
+	text-align: end;
+
+	.btn {
+		margin: 0;
+	}
+}
+
+// Default button
+// .btn {
+//   border-radius: $btn-br;
+//   background: transparent;
+//   border: 1px solid $primary-color;
+//   color: $primary-color;
+//   display: inline-block;
+//   font-size: $font-size;
+//   height: $line-height;
+//   outline: none;
+//   padding: 0 25px;
+//   text-align: center;
+//   text-decoration: none;
+//   text-transform: capitalize;
+
+//   &:hover,
+//   &:focus {
+//     background: $primary-color;
+//     border-color: $primary-color;
+//     color: #fff;
+//     text-decoration: none;
+//   }
+
+//   &:active {
+//     background: darken($primary-color, 10);
+//     border-color: darken($primary-color, 10);
+//   }
+// }
+
+// // Primary action button
+// .btn-primary {
+//   background-color: $primary-color;
+//   border-color: $primary-color;
+//   color: #fff;
+
+//   &:hover,
+//   &:focus {
+//     background: darken($primary-color, 5);
+//     border-color: darken($primary-color, 5);
+//     color: #fff;
+//   }
+
+//   &:active {
+//     background: darken($primary-color, 10);
+//     border-color: darken($primary-color, 10);
+//     color: #fff;
+//   }
+// }
+
+// // Larger button
+// .btn-lg {
+//   font-size: 1.4em;
+//   height: $line-height*1.5;
+//   padding: 0 60px;
+// }
+
+// // Smaller button
+// .btn-sm {
+//   font-size: .85em;
+//   height: $line-height*.7;
+//   padding: 0 10px;
+// }
+
+// // Link button - a button that looks like a link
+// .btn-link {
+//   box-shadow: none;
+//   background: transparent;
+//   border: 0;
+//   color: $primary-color;
+//   text-shadow: none;
+//   text-transform: none;
+
+//   &:hover,
+//   &:focus {
+//     background: transparent;
+//     color: $primary-color;
+//     text-decoration: underline;
+//   }
+// }
+
+
+// // Responsive styles if needed
+// // @include responsive($big-break) {
+// // }
+// @include responsive($small-break) {
+//   .btn {
+//     display: block;
+//     margin-bottom: 10px;
+//     width: 100%;
+//   }
+// }
+
+// Mobile first styles if needed
+// @include mobilefirst($big-break) {
+// }
+// @include mobilefirst($small-break) {
+// }

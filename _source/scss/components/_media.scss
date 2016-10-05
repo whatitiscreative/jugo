@@ -1,0 +1,16 @@
+//**
+// Media
+//**
+
+img,
+video,
+audio,
+iframe,
+object {
+  max-width: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

@@ -1,0 +1,67 @@
+.card {
+  padding: 0 1.0rem;
+  margin-bottom: 4.0rem;
+}
+
+.card-inner {
+  background: $color-white;
+  padding: 1.5rem;
+  cursor: pointer;
+
+  .label {
+    padding-top: 1.5rem;
+  }
+
+  .bg-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../img/Grilled Lamb Kabobs with Peach and Red Onion.jpg') no-repeat center center;
+    height: 178px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include global-transition;
+
+    &:before {
+      @include global-transition;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba($color-green, .75);
+      opacity: 0;
+    }
+
+
+    p {
+      font-size: 1.8rem;
+      color: $color-white;
+      display: flex;
+      margin: auto;
+      opacity: 0;
+      position: relative;
+      z-index: 10;
+      font-family: $font-tertiary-bold;
+      text-transform: uppercase;
+      @include global-transition;
+
+    }
+  }
+
+  &:hover {
+    p {
+      @include global-transition;
+      // opacity: 1;
+    }
+
+    .bg-img {
+      &:before {
+        @include global-transition;
+        opacity: 1;
+      }
+    }
+  }
+}

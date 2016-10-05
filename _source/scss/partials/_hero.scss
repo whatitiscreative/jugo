@@ -1,0 +1,64 @@
+.hero {
+  background: #d2d0ea;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  .image {
+    height: auto;
+    width: 250px;
+    align-self: center;
+
+    @include MQ(XS) {
+      height: auto;
+      width: 50vh;
+      max-width: 450px;
+    }
+  }
+
+  p {
+  	color: $color-white;
+  }
+}
+
+
+.cuts {
+  img {
+    @include MQ(S) {
+      max-width: 330px;
+      height: auto;
+
+    }
+  }
+}
+
+
+
+// .test {
+//   cursor: pointer;
+
+//   &:hover {
+//     fill: $color-blue;
+
+//     path {
+//       stroke: $color-white;
+
+//     }
+//   }
+// }
+
+// .hindeshank {
+//   path {
+//     fill: $color-blue;
+//   }
+// }
+
+// .rect {
+//   height: 200px;
+//   cursor: pointer;
+
+//   &:hover {
+//     fill: $color-blue;
+//   }
+// }

@@ -1,0 +1,109 @@
+// Foundation
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+html, body {
+  height: 100%;
+}
+
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout 
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+iframe {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ol,
+ul,
+blockquote,
+figure,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+li {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-size: inherit;
+}
+
+strong {
+  font-weight: bold;
+  font-weight: 100;
+}
+
+sup {
+  position: relative;
+  top: -.5em;
+  font-size: 65%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+a,
+button,
+.btn {
+  color: inherit;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
