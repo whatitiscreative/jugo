@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body { height: 100%; }
 
 /* NOTE
@@ -350,36 +349,24 @@ img { max-width: 100%; height: auto; }
 
 .tab-row { margin: 5.0rem 0; }
 
-.transformer-tabs { margin-bottom: 100px; }
+.transformer-tabs li { display: inline-block; }
 
-.transformer-tabs ul { list-style: none; padding: 0; margin: 0; }
+.transformer-tabs a.active { position: relative; background: #231f20; color: #FFFFFF; }
 
-.transformer-tabs li { display: inline-block; padding: 0; }
-
-.transformer-tabs a { display: inline-block; color: white; text-decoration: none; padding: 0.5rem; }
-
-.transformer-tabs a.active { position: relative; color: blue; }
-
-@media (max-width: 700px) { .transformer-tabs ul { border-bottom: 0; overflow: hidden; position: relative; background: #666; /* fallback */ background: -webkit-linear-gradient(#666, #222); background: linear-gradient(#666, #222); }
-  .transformer-tabs ul::after { content: "☰"; position: absolute; top: 8px; right: 15px; z-index: 2; pointer-events: none; }
-  .transformer-tabs ul.open a { position: relative; display: block; }
+@media (max-width: 767px) { .transformer-tabs ul { border-bottom: 0; overflow: hidden; position: relative; }
+  .transformer-tabs ul .btn { border-top: 0; }
+  .transformer-tabs ul.open a { position: relative; }
   .transformer-tabs li { display: block; }
-  .transformer-tabs a { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-  .transformer-tabs a.active { border: 0; z-index: 1; background: #666; /* fallback */ background: -webkit-linear-gradient(#666, #222); background: linear-gradient(#666, #222); } }
+  .transformer-tabs li .btn { border-top: 0; }
+  .transformer-tabs li:first-child .btn { border-top: 3px solid #231f20; }
+  .transformer-tabs a { position: absolute; margin: 0; }
+  .transformer-tabs a.active { z-index: 1; } }
 
-.tabs > div { opacity: 0; padding: 1rem; position: absolute; -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; }
+.tabs > .tab-it { display: none; }
 
-.tabs > div:nth-of-type(1) { background: #9b59b6; }
+.tabs > .active { display: block; }
 
-.tabs > div:nth-of-type(2) { background: #3498db; }
-
-.tabs > div:nth-of-type(3) { background: #e67e22; }
-
-.tabs > div:nth-of-type(4) { background: #c0392b; }
-
-.tabs > .active { opacity: 1; -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; }
-
-body { padding: 1rem; background: #333; color: white; font: 100%/1.4 Sans-Serif; }
+.tabs { margin-bottom: 30px; }
 
 .scroll-ind { position: relative; cursor: pointer; margin: 5.0rem auto 0 auto; width: 0; display: none; }
 

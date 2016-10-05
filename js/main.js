@@ -95,6 +95,8 @@ $(window).scroll(function() {
     }
 });
 
+
+var $doc = $(document);
 var Tabs = {
 
   init: function() {
@@ -105,22 +107,25 @@ var Tabs = {
   bindUIfunctions: function() {
 
     // Delegation
-    $(document)
-      .on("click", ".transformer-tabs a[href^='#']:not('.active')", function(event) {
-        Tabs.changeTab(this.hash);
+    $doc.on("click", ".transformer-tabs a[href^='#']:not('.active')", function(event) {
+      
+        // changed
+        Tabs.changeTab(this.hash, this);
         event.preventDefault();
-      })
-      .on("click", ".transformer-tabs a.active", function(event) {
+      }).on("click", ".transformer-tabs a.active", function(event) {
         Tabs.toggleMobileMenu(event, this);
         event.preventDefault();
       });
 
   },
 
-  changeTab: function(hash) {
-
-    var anchor = $("[href=" + hash + "]");
-    var div = $(hash);
+  //changed
+  changeTab: function(hash, caller) {
+    //changed variables
+    //var anchor = $("[href=" + hash + "]");
+    var anchor = $(caller);
+    //var div = $(hash);
+    var div = $(caller).closest('.transformer-tabs').siblings(hash);
 
     // activate correct anchor (visually)
     anchor.addClass("active").parent().siblings().find("a").removeClass("active");
@@ -129,8 +134,7 @@ var Tabs = {
     div.addClass("active").siblings().removeClass("active");
 
     // update URL, no history addition
-    // You'd have this active in a real situation, but it causes issues in an <iframe> (like here on CodePen) in Firefox. So commenting out.
-    // window.history.replaceState("", "", hash);
+    window.history.replaceState("", "", hash);
 
     // Close menu, in case mobile
     anchor.closest("ul").removeClass("open");
@@ -145,9 +149,6 @@ var Tabs = {
   toggleMobileMenu: function(event, el) {
     $(el).closest("ul").toggleClass("open");
   }
-
 }
 
 Tabs.init();
-
-
