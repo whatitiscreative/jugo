@@ -1,0 +1,132 @@
+.landing {
+  min-height: calc(100vh - 50px);
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../img/SW_DominikMartin-copia-2.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.farmers {
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../img/11456152984_68fecb3344_o.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.nutrition {
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../img/Slow Cooker Lamb Stew.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.gallery, .cuts, .kitchen {
+  padding: 10.0rem 0 6.0rem 0;
+  min-height: calc(100vh - 200px);
+  position: relative;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.farmers-gallery, .nutrition-gallery {
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10.0rem 0 6.0rem 0;
+  min-height: calc(100vh - 200px);
+  position: relative;
+
+  .btn {
+    @include MAX(XS) {
+      max-width: 200px;
+      margin: auto;
+    }
+  }
+}
+
+.subtext {
+  padding: 8.0rem 0;
+}
+
+.inner {
+  border: 7px solid $color-black;
+  padding: 10.0rem;
+  margin-top: -35px;
+}
+
+.cuts {
+  h1 {
+    background: $color-beige;
+    padding: 0 4.0rem;
+  }
+}
+
+
+.cooking-instructions {
+  border: 15px solid $color-white;
+  background: $color-white;
+
+
+  h5 {
+    background: $color-black;
+
+    padding: 2.2rem;
+  }
+
+}
+
+.instruction-inner {
+  border-bottom: 2px solid $color-black;
+  padding: 50px;
+
+  &.left {
+    border-left: 2px solid $color-black;
+  }
+
+  &.right {
+    border-right: 2px solid $color-black;
+  }
+}
+
+.instruction {
+  border: 1px solid $color-yellow;
+  padding: 1.0rem 2.4rem 2.4rem 2.4rem;
+  position: relative;
+  min-height: 185px;
+  margin-bottom: 4.0rem;
+
+  h6 {
+    margin: 0;
+  }
+
+  &.featured {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid $color-white;
+    padding-left: 0;
+  }
+}
+
+.meat-1 {
+  @include MAX(XS) {
+    display: none;
+  }
+}
+
+.flex-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.yellow-icon {
+  height: 4.6rem;
+  width: 4.6rem;
+  display: flex;
+  position: absolute;
+  top: -24px;
+  left: -24px;
+}

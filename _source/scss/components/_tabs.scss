@@ -17,6 +17,13 @@
       background: $color-black;
       color: $color-white;
     }
+
+    &.white {
+      &.active {
+        background: $color-white;
+        color: $color-black;
+      }
+    }
   }
 
   @media (max-width: 767px) {
@@ -56,6 +63,10 @@
 
       	.btn {
       		border-top: 3px solid $color-black;
+
+          &.white {
+            border-top: 3px solid $color-white;
+          }
       	}
       }
     }

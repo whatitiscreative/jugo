@@ -24,10 +24,10 @@ gulp.task('styles', function() {
 	return gulp.src(paths.scss)
 		.pipe(sass({
 			precision: 10,
-			// outputStyle: 'compressed',
+			outputStyle: 'compressed',
 			// outputStyle: 'expanded',
 			// outputStyle: 'nested',
-			outputStyle: 'compact',
+			// outputStyle: 'compact',
 			onError: console.error.bind(console, 'Sass error:'),
 		}))
 		.pipe(autoprefixer({

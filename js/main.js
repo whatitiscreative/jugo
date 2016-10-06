@@ -2,12 +2,6 @@ $(document).ready(function(){
 	console.log('working');
 });
 
-// Init tabs
-
-// $( function() {
-//   $( "#tabs" ).tabs();
-// } );
-
 // Init sliders
 
 $('.slider-one').slick({
@@ -29,14 +23,6 @@ function initMobileMenu() {
    });
 }
 initMobileMenu();
-
-// function closeMobileMenu() {
-//  $('#closeMobileMenu').on('click', function(){
-//    $('.nav-wrap').removeClass('active');
-//    $('main').removeClass('blur');
-//    });
-// }
-// closeMobileMenu();
 
 function hamburgerAnimate() {
  $('.hamburger').on('click', function(){

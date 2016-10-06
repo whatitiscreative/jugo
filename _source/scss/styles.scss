@@ -1,19 +1,19 @@
 // Reset default browser styles using Normalize
-@import 'base/normalize';
+@import 		'base/normalize';
 
 // Set variables and reusable mixins
-@import 'base/config',
+@import 		'base/config',
 				'base/mixins';
 
 // Import typical layout styles
-@import 'base/flexbox-grid',
+@import 		'base/flexbox-grid',
 				'base/grid',
 				'base/responsive',
 				'base/type';
 
 // Import reusable modules (Components)
 
-@import 'components/nav',
+@import 		'components/nav',
 				'components/buttons',
 				'components/forms',
 				'components/media',
@@ -23,128 +23,18 @@
 				'components/hamburger',
 				'components/card';
 
+
 // Import Partials
-@import 'partials/layout',
-				'partials/hero';
+@import 		'partials/layout',
+				'partials/hero',
+				'partials/globals';
+
+// Import Pages
+@import 		'pages/homepage';
 
 // Specific project styles, add any section specific sass modules here (Pages)
 
 body {
 	background: $color-white;
 	font-family: $font-primary;
-}
-
-.beige-bg {
-  background: $color-beige;
-}
-
-.black-bg {
-  background: $color-black;
-}
-
-.intro {
-	padding: 4.0rem 0;
-
-	h3 {
-		padding: 2.0rem 0;
-		border-top: 1px solid $color-blue;
-		border-bottom: 1px solid $color-blue;
-	}
-
-	.box {
-		@include MQ(L) {
-			padding: 0 55px;
-
-		}
-	}
-}
-
-.content-section {
-	padding: 4.0rem 0;
-}
-
-.full-height {
-  min-height: 100vh;
-}
-
-.landing {
-  min-height: calc(100vh - 50px);
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../img/SW_DominikMartin-copia-2.jpg') no-repeat center center;
-  background-size: cover;
-  padding-top: 50px;
-}
-
-.farmers {
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../img/11456152984_68fecb3344_o.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-.nutrition {
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../img/Slow Cooker Lamb Stew.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-.gallery, .cuts, .kitchen {
-	padding: 10.0rem 0 6.0rem 0;
-	min-height: calc(100vh - 200px);
-	position: relative;
-}
-
-.subtext {
-	padding: 8.0rem 0;
-
-	@include MQ(S) {
-		padding: 8.0rem 16.0rem;
-	}
-}
-
-.inner {
-	border: 7px solid $color-black;
-	padding: 10.0rem;
-	margin-top: -35px;
-}
-
-.cuts {
-	h1 {
-		background: $color-beige;
-		padding: 0 4.0rem;
-	}
-}
-
-// Must have parent flex property
-
-.align-self-centered {
-	align-self: center;
-}
-
-.blur {
-	filter: blur(4px);
-}
-
-.right {
-	text-align: right;
-}
-
-.col-right-wrap {
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-	align-items: flex-end;
-}
-
-
-.recipes {
-	.sub {
-		margin-bottom: 6.0rem;
-	}
-}
-
-.row {
-	&.cheat-neg-margin {
-		margin-bottom: 0 -1rem;
-	}
-}
-
-.border-top {
-	border-top: 1px solid $color-black;
 }
