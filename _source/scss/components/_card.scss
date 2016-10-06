@@ -18,7 +18,11 @@
 
     h3 {
       padding-top: 0.5rem;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
+
+      @include MQ(S) {
+        font-size: 2.2rem;
+      }
     }
   }
 
@@ -82,10 +86,13 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
+  height: 60px;
+  width: 60px;
+  margin: auto;
 
-  @include MQ(XS) {
+  @include MQ(S) {
     height: 100%;
+    width: auto;
     padding: 0 10px;
   }
 

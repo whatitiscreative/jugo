@@ -2,6 +2,12 @@
 	margin: 5.0rem 0;
 }
 
+.kitchen {
+  .tab-row {
+    margin: 5.0rem 0 7.5rem 0;
+  }
+}
+
 .transformer-tabs {
   ul {
 	
@@ -26,7 +32,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @include MAX(M) {
     ul {
       border-bottom: 0;
       overflow: hidden;
