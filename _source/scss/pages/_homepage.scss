@@ -67,7 +67,6 @@
   border: 15px solid $color-white;
   background: $color-white;
 
-
   h5 {
     background: $color-black;
 
@@ -218,4 +217,28 @@
 
 .right-col {
   padding-left: 30px;
+}
+
+.cooking-graph {
+  border: 15px solid $color-white;
+  background: $color-white;
+  min-height: 100vh;
+}
+
+.cg-inner {
+  border: 1px solid $color-black;
+}
+
+.cg-label-wrap {
+  background: $color-black;
+  color: $color-white;
+  padding: 1.35rem;
+  display: flex;
+
+  p {    
+    @include MQ(XS) {
+      flex-grow: 2;
+
+    }
+  }
 }
