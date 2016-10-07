@@ -228,25 +228,11 @@
 .cooking-graph {
   border: 15px solid $color-white;
   background: $color-white;
-  min-height: 100vh;
+  // min-height: 100vh;
 }
 
 .cg-inner {
   border: 1px solid $color-black;
-}
-
-.cg-label-wrap {
-  background: $color-black;
-  color: $color-white;
-  padding: 1.35rem;
-  display: flex;
-
-  p {    
-    @include MQ(XS) {
-      flex-grow: 2;
-
-    }
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -256,3 +242,85 @@
 
   }
 }
+
+.col-row {
+  display: flex;
+  flex-basis: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  border-bottom: 1px solid $color-black;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  // .col {
+  //   min-height: 85px;
+  // }
+
+  // &:first-child {
+  //   .col {
+  //     min-height: 185px;
+  //   }
+  // }
+
+
+  @include MQ(M) {
+    flex-direction: row;
+  }
+
+}
+
+.cg-inner {
+  .col {
+    flex-grow: 1;
+    padding: 1.0rem;
+
+    p {
+      display: flex;
+    }
+
+    @include MQ(M) {
+      border-right: 1px solid $color-black;
+      width: 100%;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+.cg-label-wrap {
+  background: $color-black;
+  color: $color-white;
+  display: none;
+
+  @include MQ(M) {
+    display: flex;
+  }
+
+  .col {
+    border-right: 1px solid $color-white;
+
+    p {
+      padding: 0.5rem 0;
+    }
+  }
+
+  p {    
+    @include MQ(XS) {
+      flex-grow: 2;
+
+    }
+  }
+}
+
+
+@include MAX(M) {
+  .cg-title {
+    background: $color-black;
+    color: $color-white;
+  }
+}
+

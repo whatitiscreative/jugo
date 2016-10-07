@@ -1,17 +1,28 @@
 .recipe-template {
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 150px);
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .recipe-img {
   background: url('../img/psalad.jpg') no-repeat center center;
   background-size: cover;
-  height: 400px;
+  height: 250px;
   margin-bottom: 1.0rem;
+
+  @include MQ(S) {
+    height: 400px;
+  }
 }
 
 .recipe {
   padding-top: 130px;
+
+  .col-xs-12 {
+    &:first-child {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 .ingredient-text {
@@ -30,4 +41,44 @@
   font-family: $font-tertiary-bold;
   padding: 2.0rem 0;
   border-top: 5px solid $color-black;
+}
+
+@include MQ(XS) {
+  .recipe {
+    .col-xs-12 {
+      &:first-child {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+
+.ingredients {
+  .col {
+    flex-basis: 95%;
+    max-width: 95%;
+
+    &:first-child {
+      flex-basis: 5%;
+      max-width: 5%;
+    }
+  }
+}
+
+.step-instruction {
+  margin-top: 3.0rem;
+  padding: 0 0.5rem;
+
+  p {
+    display: flex;
+    flex-basis: 95%;
+    max-width: 95%;
+
+    &:first-child {
+      display: flex;
+      flex-basis: 5%;
+      max-width: 5%;
+    }
+  }
 }

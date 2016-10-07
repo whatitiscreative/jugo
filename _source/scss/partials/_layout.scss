@@ -25,6 +25,22 @@ header {
 
 footer {
   background: white;
-  height: 122px;
-  // padding: 0 25px;
+  height: 185px;
+  padding: 20px 0;
+
+
+  @include MQ(XS) {
+    height: 122px;
+    padding: 0;
+  }
+}
+
+ol {
+  li {
+    &:before {
+      content: '1';
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
 }

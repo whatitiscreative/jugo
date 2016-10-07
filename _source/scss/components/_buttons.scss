@@ -16,7 +16,7 @@
 	margin: 20px 0;
 	font-weight: 400;
 
-	@include MQ(L) {
+	@include MQ(S) {
 		margin: 0 auto;
 		width: 258px;
 	}
@@ -54,12 +54,22 @@
 }
 
 .download-btn {
-	display: flex;
-	justify-content: flex-end;
-	text-align: end;
 
+	@include MQ(XS) {
+		display: flex;
+		justify-content: flex-end;
+		text-align: end;
+
+		.btn {
+			margin: 0;
+		}
+	}
+}
+
+footer {
 	.btn {
-		margin: 0;
+		margin: 0 auto;
+		width: 258px;
 	}
 }
 

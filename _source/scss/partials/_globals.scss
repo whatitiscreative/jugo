@@ -95,3 +95,13 @@
   padding-top: 5px;
   margin-bottom: 2px;
 }
+
+
+.reverse-sm {
+  @include MQ(XS) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
