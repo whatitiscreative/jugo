@@ -1,0 +1,33 @@
+.recipe-template {
+  min-height: calc(100vh - 50px);
+  padding-top: 50px;
+}
+
+.recipe-img {
+  background: url('../img/psalad.jpg') no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  margin-bottom: 1.0rem;
+}
+
+.recipe {
+  padding-top: 130px;
+}
+
+.ingredient-text {
+  padding: 0.5rem 0;
+  border-top: 1px solid $color-green;
+  border-bottom: 1px solid $color-green;
+  margin-bottom: 1.0rem;
+}
+
+.spacer {
+  margin: 2.0rem 0;
+}
+
+.recipe-title {
+  font-size: 3.0rem;
+  font-family: $font-tertiary-bold;
+  padding: 2.0rem 0;
+  border-top: 5px solid $color-black;
+}
