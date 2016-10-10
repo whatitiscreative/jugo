@@ -360,20 +360,20 @@
 
 
 .cut-svg {
-  text {
+  .group-it {
     cursor: pointer;
-  }
+    position: relative;
 
-  .hover {
-    cursor: pointer;
     &:hover {
-      fill: $color-yellow;
-      stroke: $color-yellow;
+      text {
+        fill: $color-white;
+      }
+
+      .label-box {
+        fill: $color-blue;
+        stroke: $color-blue;
+      }
     }
-  }
-
-  path {
-
   }
 }
 
