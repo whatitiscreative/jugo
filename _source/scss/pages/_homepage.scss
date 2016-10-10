@@ -259,7 +259,6 @@
   flex-basis: 100%;
   max-width: 100%;
   flex-direction: column;
-  border-bottom: 1px solid $color-black;
 
   &:last-child {
     border-bottom: 0;
@@ -275,11 +274,18 @@
   //   }
   // }
 
+  &.w-border {
+    border-top: 1px solid $color-black;
 
-  @include MQ(M) {
-    flex-direction: row;
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 
+
+  @include MQ(S) {
+    flex-direction: row;
+  }
 }
 
 .cg-inner {
@@ -287,12 +293,16 @@
     flex-grow: 1;
     padding: 1.0rem;
 
+    &.w-border {
+      border-right: 1px solid $color-black;
+    }
+
     p {
       display: flex;
     }
 
-    @include MQ(M) {
-      border-right: 1px solid $color-black;
+
+    @include MQ(S) {
       width: 100%;
     }
 
@@ -307,7 +317,7 @@
   color: $color-white;
   display: none;
 
-  @include MQ(M) {
+  @include MQ(S) {
     display: flex;
   }
 
@@ -328,7 +338,7 @@
 }
 
 
-@include MAX(M) {
+@include MAX(S) {
   .cg-title {
     background: $color-black;
     color: $color-white;
