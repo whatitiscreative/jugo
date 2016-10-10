@@ -31,10 +31,18 @@ function hamburgerAnimate() {
 }
 hamburgerAnimate();
 
+function svgClick() {
+ $('.cut-svg path').on('click', function(){
+    console.log('working');
+   });
+}
+svgClick();
+
+
 
 // Smooth scrolling navigation
 
-$('.nav-items a').on('click', function() {
+$('.nav-items li a').on('click', function() {
 	$('.nav-items').removeClass('active');
 
 	$('.nav-wrap').removeClass('active');
@@ -58,7 +66,6 @@ $('.nav-items a').on('click', function() {
         }
 
     return false;
-
 })
 
 // Add / remove active class based on window position
@@ -68,16 +75,16 @@ $(window).scroll(function() {
     if (windscroll >= 550) {
         $('.smooth-anchor').each(function(i) {
             if ($(this).position().top <= windscroll + 50) {
-                $('.nav-items a.active').removeClass('active');
-                $('.nav-items a').eq(i).addClass('active');
+                $('.nav-items li a.active').removeClass('active');
+                $('.nav-items li a').eq(i).addClass('active');
             }
         });
 
     } else {
 
         $('.nav-items').removeClass('fixed');
-        $('.nav-items a.active').removeClass('active');
-        $('.nav-items a:first').addClass('active');
+        $('.nav-items li a.active').removeClass('active');
+        $('.nav-items li a:first').addClass('active');
     }
 });
 

@@ -15,7 +15,7 @@
   background-size: cover;
 }
 
-.gallery, .cuts, .kitchen {
+.gallery, .kitchen {
   padding: 10.0rem 0 6.0rem 0;
   min-height: calc(100vh - 200px);
   position: relative;
@@ -60,6 +60,7 @@
 }
 
 .cuts {
+  padding: 10.0rem 0 6.0rem 0;
   h1 {
     background: $color-beige;
     padding: 0 4.0rem;
@@ -206,11 +207,14 @@
 }
 
 .text-desc {
-  text-align: center;
   margin: 3.0rem 0;
 
   @include MQ(S) {
     margin: 0 0 3.0rem 0;
+  }
+
+  @include MQ(XS) {
+    text-align: center;
   }
 
   &:last-child {
@@ -250,7 +254,6 @@
   .ipad-p-100 {
     flex-basis: 100%;
     max-width: 100%;
-
   }
 }
 
@@ -344,4 +347,42 @@
     color: $color-white;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.cut-svg {
+  text {
+    cursor: pointer;
+  }
+
+  .hover {
+    cursor: pointer;
+    &:hover {
+      fill: $color-yellow;
+      stroke: $color-yellow;
+    }
+  }
+
+  path {
+
+  }
+}
+
+
+
+
+
+
+
+
+
 
