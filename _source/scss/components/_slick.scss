@@ -118,20 +118,37 @@
 
 
 .slick-dots {
-    height: 30px;
-    display: flex;
+    height: 0px;
     justify-content: center;
     flex-direction: row;
     text-align: center;
+    bottom: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 5vh;
+    display: none;
+
+    // @include MQ(L) {
+    //     bottom: 55px;
+    // }
+
+    @include MQ(M) {
+        display: flex;
+    }
 
     li {
         display: inline-block;
         align-self: center;
-        width: 20px;
-        height: 20px;
-        margin: 10px;
-        background: $color-black;
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+        background: $color-white;
+        opacity: 0.5;
         border-radius: 50%;
+
+        &.slick-active {
+            opacity: 1;
+        }
 
         button {
             font-size: 0;
@@ -148,3 +165,4 @@
         }
     }
 }
+

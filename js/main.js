@@ -6,12 +6,12 @@ $(document).ready(function(){
 
 $('.slider-one').slick({
 	arrows: false,
-	dots: false
+	dots: true
 });
 
 $('.slider-two').slick({
 	arrows: false,
-	dots: false
+	dots: true
 });
 
 // Init Mobile Controls

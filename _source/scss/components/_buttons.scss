@@ -16,7 +16,7 @@
 	margin: 20px 0;
 	font-weight: 400;
 
-	@include MQ(S) {
+	@include MQ(L) {
 		margin: 0 auto;
 		width: 258px;
 	}

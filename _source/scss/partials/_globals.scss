@@ -88,12 +88,22 @@
   position: absolute;
   left: -12px;
   top: 10px;
+
+  display: none;
+
+  @include MQ(L) {
+    display: block;
+  }
 }
 
 .border-yellow {
-  border-bottom: 1px solid $color-yellow;
+  border-bottom: 0;
   padding-top: 5px;
   margin-bottom: 2px;
+
+  @include MQ(M) {
+    border-bottom: 1px solid $color-yellow;
+  }
 }
 
 

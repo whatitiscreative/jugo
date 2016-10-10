@@ -83,12 +83,16 @@
   border-bottom: 2px solid $color-black;
   padding: 20px;
 
+  @include MQ(L) {
+    padding: 50px;
+  }
+
   &.left {
     border-left: 2px solid $color-black;
     border-right: 1px solid $color-black;
 
 
-    @include MQ(S) {
+    @include MQ(L) {
       border-right: 0;
       border-left: 2px solid $color-black;
       padding: 50px;
@@ -168,7 +172,7 @@
   left: -24px;
   display: none;
 
-  @include MQ(M) {
+  @include MQ(L) {
     display: block;
   }
 }
@@ -203,11 +207,11 @@
 
 .text-desc {
   text-align: center;
-  margin: 0 0 3.0rem 0;
+  margin: 3.0rem 0;
 
-  // @include MQ(S) {
-  //   margin: 0 0 3.0rem 0;
-  // }
+  @include MQ(S) {
+    margin: 0 0 3.0rem 0;
+  }
 
   &:last-child {
     margin-bottom: 0;
