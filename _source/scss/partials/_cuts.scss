@@ -2,14 +2,23 @@
 // ------------------------------------------------------------------------------------------------
 
 .inner {
-  border: 7px solid $color-black;
-  padding: 0 6.0rem 0 4.0rem;
-  margin-top: -35px;
+  padding: 10.0rem 1.0rem 0 1.0rem;
+
+  @include MQ(M) {
+    border: 7px solid $color-black;
+    padding: 0 6.0rem 0 4.0rem;
+    margin-top: -35px;
+  }
   // position: relative;
 }
 
 .cuts {
-  padding: 10.0rem 0 6.0rem 0;
+  padding: 4.0rem 0;
+
+  @include MQ(M) {
+    padding: 10.0rem 0 6.0rem 0;
+  }
+
   h1 {
     background: $color-beige;
     padding: 0 4.0rem;
@@ -21,18 +30,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 50px;
   position: relative;
 
+  @include MQ(M) {
+    padding: 0 50px;
+  }
+
   > div {
-    padding: 0 2.5rem;
+
+    margin: 4.0rem 0 0 0;
+
+    @include MAX(M) {
+      display: block !important;
+    }
+
+    @include MQ(M) {
+      padding: 0 2.5rem;
+      margin: 0 auto;
+    }
   }
 
    p {
     padding: 2.5rem 0;
     border-top: 1px solid $color-blue;
     border-bottom: 1px solid $color-blue;
-    // margin: 2.0rem 2.5rem 0;
+    padding: 2.5rem 0;
     margin: 2.0rem 0 0 0;
    }
 }
@@ -41,17 +63,22 @@
 
 .cut-svg-wrap {
   position: relative;
-  min-height: 450px;
   // padding-left: 6.0rem;
+
+  @include MQ(M) {
+    min-height: 450px;
+  }
 }
 
 .cut-svg {
   margin: -30px 0 -100px -20px;
   position: relative;
   z-index: 2;
-  // position: absolute;
-  // left: -65px;
-  // top: -145px;
+  display: none;
+
+  @include MQ(M) {
+    display: block;
+  }
 
   .group-it {
     cursor: pointer;
@@ -71,14 +98,22 @@
 }
 
 .lamb-img {
-  position: absolute;
-  top: 191px;
-  z-index: 1;
-  left: 83px;
+  margin-bottom: 6.0rem;
+
+  @include MQ(XS) {
+       max-width: 250px;
+       height: auto;
+       margin-bottom: 0;
+     }
+
 
    @include MQ(M) {
         max-width: 330px;
         height: auto;
+        position: absolute;
+        top: 191px;
+        z-index: 1;
+        left: 83px;
       }
 }
 
