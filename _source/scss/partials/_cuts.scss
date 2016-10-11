@@ -42,6 +42,8 @@
 
 .cut-svg {
   margin: -30px 0 -100px -20px;
+  position: relative;
+  z-index: 2;
   // position: absolute;
   // left: -65px;
   // top: -145px;
@@ -62,3 +64,26 @@
     }
   }
 }
+
+.lamb-img {
+  position: absolute;
+  top: 191px;
+  z-index: 1;
+  left: 83px;
+
+   @include MQ(S) {
+        max-width: 330px;
+        height: auto;
+      }
+}
+
+
+// .cuts {
+//   img {
+//     @include MQ(S) {
+//       max-width: 330px;
+//       height: auto;
+
+//     }
+//   }
+// }

@@ -23,17 +23,6 @@
 }
 
 
-.cuts {
-  img {
-    @include MQ(S) {
-      max-width: 330px;
-      height: auto;
-
-    }
-  }
-}
-
-
 // .test {
 //   cursor: pointer;
 
