@@ -31,29 +31,26 @@ function hamburgerAnimate() {
 }
 hamburgerAnimate();
 
-// function svgClick() {
-//  $('.group-it').on('mouseover', function(){
-//     console.log('working');
-//    });
-// }
-// svgClick();
+// Functionality for cuts of lamb
 
 $(".hidden-labels div").each(function(){
-     $(this).hide();
+    // Hide div by default 
+    $(this).hide();
+    // Unless the ID is Leg (set leg as the default active div)
     if($(this).attr('id') == 'leg') {
         $(this).show();
     }
 });
 
+// On hover show selected div and add active class to labels
 
-$('.group-it').on( "mouseover", function(e) {
-  // $(this).closest('.group-it').addClass('active');
-  $('.group-it').removeClass("active");
-  $(this).addClass("active");
+$('.group-it').on( 'mouseover', function(e) {
+  $('.group-it').removeClass('active');
+  $(this).addClass('active');
 
     e.preventDefault();
     var id = $(this).attr('data-related'); 
-    $(".hidden-labels div").each(function(){
+    $('.hidden-labels div').each(function(){
         $(this).hide();
 
         if($(this).attr('id') == id) {
@@ -62,6 +59,14 @@ $('.group-it').on( "mouseover", function(e) {
     });
 });
 
+
+$('.foreshank').on( 'mouseover', function(e) {
+  $('.hindshank').addClass('active');
+});
+
+$('.hindshank').on( 'mouseover', function(e) {
+  $('.foreshank').addClass('active');
+});
 
 // Smooth scrolling navigation
 
@@ -155,7 +160,6 @@ var Tabs = {
 
     // Close menu, in case mobile
     anchor.closest("ul").removeClass("open");
-
   },
 
   // If the page has a hash on load, go to that tab
