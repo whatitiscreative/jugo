@@ -53,21 +53,6 @@
   }
 }
 
-.inner {
-  border: 7px solid $color-black;
-  padding: 10.0rem;
-  margin-top: -35px;
-}
-
-.cuts {
-  padding: 10.0rem 0 6.0rem 0;
-  h1 {
-    background: $color-beige;
-    padding: 0 4.0rem;
-  }
-}
-
-
 .cooking-instructions {
   border: 15px solid $color-white;
   background: $color-white;
@@ -347,42 +332,3 @@
     color: $color-white;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.cut-svg {
-  .group-it {
-    cursor: pointer;
-    position: relative;
-
-    &:hover {
-      text {
-        fill: $color-white;
-      }
-
-      .label-box {
-        fill: $color-blue;
-        stroke: $color-blue;
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-

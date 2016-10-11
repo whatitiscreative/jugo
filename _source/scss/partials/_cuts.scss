@@ -1,0 +1,64 @@
+// Cuts of Lamb
+// ------------------------------------------------------------------------------------------------
+
+.inner {
+  border: 7px solid $color-black;
+  padding: 0 6.0rem 0 4.0rem;
+  margin-top: -35px;
+  // position: relative;
+}
+
+.cuts {
+  padding: 10.0rem 0 6.0rem 0;
+  h1 {
+    background: $color-beige;
+    padding: 0 4.0rem;
+  }
+}
+
+
+.hidden-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  position: relative;
+
+   p {
+    padding: 2.5rem 0;
+    border-top: 1px solid $color-blue;
+    border-bottom: 1px solid $color-blue;
+    margin: 2.0rem 2.5rem 0;
+   }
+}
+
+// SVG
+
+.cut-svg-wrap {
+  position: relative;
+  min-height: 450px;
+  // padding-left: 6.0rem;
+}
+
+.cut-svg {
+  margin: -30px 0 -100px -20px;
+  // position: absolute;
+  // left: -65px;
+  // top: -145px;
+
+  .group-it {
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      text {
+        fill: $color-white;
+      }
+
+      .label-box {
+        fill: $color-blue;
+        stroke: $color-blue;
+      }
+    }
+  }
+}

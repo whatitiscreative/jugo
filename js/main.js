@@ -31,12 +31,36 @@ function hamburgerAnimate() {
 }
 hamburgerAnimate();
 
-function svgClick() {
- $('.cut-svg path').on('click', function(){
-    console.log('working');
-   });
-}
-svgClick();
+// function svgClick() {
+//  $('.group-it').on('mouseover', function(){
+//     console.log('working');
+//    });
+// }
+// svgClick();
+
+$(".hidden-labels div").each(function(){
+     $(this).hide();
+    if($(this).attr('id') == 'main-label') {
+        $(this).show();
+    }
+});
+
+
+$('.group-it').on( "mouseover", function(e) {
+  // $(this).closest('.group-it').addClass('active');
+
+    e.preventDefault();
+    var id = $(this).attr('data-related'); 
+    $(".hidden-labels div").each(function(){
+        $(this).hide();
+
+        if($(this).attr('id') == id) {
+            $(this).show();
+        }
+    });
+});
+
+
 
 
 
