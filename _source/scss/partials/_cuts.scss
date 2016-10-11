@@ -52,7 +52,7 @@
     cursor: pointer;
     position: relative;
 
-    &:hover {
+    &:hover, &.active {
       text {
         fill: $color-white;
       }
@@ -71,7 +71,7 @@
   z-index: 1;
   left: 83px;
 
-   @include MQ(S) {
+   @include MQ(M) {
         max-width: 330px;
         height: auto;
       }

@@ -40,7 +40,7 @@ hamburgerAnimate();
 
 $(".hidden-labels div").each(function(){
      $(this).hide();
-    if($(this).attr('id') == 'main-label') {
+    if($(this).attr('id') == 'leg') {
         $(this).show();
     }
 });
@@ -48,6 +48,8 @@ $(".hidden-labels div").each(function(){
 
 $('.group-it').on( "mouseover", function(e) {
   // $(this).closest('.group-it').addClass('active');
+  $('.group-it').removeClass("active");
+  $(this).addClass("active");
 
     e.preventDefault();
     var id = $(this).attr('data-related'); 
@@ -59,9 +61,6 @@ $('.group-it').on( "mouseover", function(e) {
         }
     });
 });
-
-
-
 
 
 // Smooth scrolling navigation
