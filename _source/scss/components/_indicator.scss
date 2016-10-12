@@ -1,9 +1,17 @@
 .scroll-ind {
-  position: relative;
-  cursor: pointer;
-  margin: 5.0rem auto 0 auto;
-  width: 0;
+  // position: relative;
+  // cursor: pointer;
+  // margin: 5.0rem auto 0 auto;
+  // width: 0;
   display: none;
+
+  width: 0;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 2.5vh;
+  left: 0;
+  right: 0;
+
 
   @include MQ(M) {
     display: inline-block;
