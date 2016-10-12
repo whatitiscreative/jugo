@@ -1,16 +1,16 @@
 .hero {
-  background: #d2d0ea;
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 
   .image {
     height: auto;
     width: 250px;
-    // align-self: center;
-    // display: flex;
-    // flex-direction: column;
+    margin: 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
 
     @include MQ(XS) {
       height: auto;
