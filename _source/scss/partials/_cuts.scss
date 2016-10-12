@@ -41,7 +41,6 @@
 
     margin: 4.0rem 0 0 0;
     width: 100%;
-    text-align: left;
 
     @include MAX(M) {
       display: block !important;
@@ -50,6 +49,7 @@
     @include MQ(M) {
       padding: 0 2.5rem;
       margin: 0 auto;
+      text-align: left;
     }
   }
 
@@ -77,11 +77,11 @@
   margin: -30px 0 -100px -20px;
   position: relative;
   z-index: 2;
-  // display: none;
+  display: none;
 
-  // @include MQ(M) {
-  //   display: block;
-  // }
+  @include MQ(M) {
+    display: block;
+  }
 
   .group-it {
     cursor: pointer;
@@ -102,6 +102,7 @@
 
 .lamb-img {
   margin-bottom: 6.0rem;
+  display: none;
 
   @include MQ(XS) {
        max-width: 250px;
@@ -117,6 +118,7 @@
         top: 191px;
         z-index: 1;
         left: 83px;
+        display: block;
       }
 }
 
@@ -130,3 +132,12 @@
 //     }
 //   }
 // }
+
+.mobile-lamb {
+  display: block;
+  margin-bottom: 6.0rem;
+
+  @include MQ(M) {
+    display: none;
+  }
+}
