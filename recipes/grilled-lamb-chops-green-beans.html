@@ -16,18 +16,18 @@
 
 	<nav class="">
 		<header>
-			<a class="col-xs-6 col-md-2 lamb-icon">
+			<a href="../index.html" class="col-xs-6 col-md-2 lamb-icon">
 				<img src="../img/lamb-icon.png">
 			</a>
 
 			<div class="nav-wrap col-md-8">
 				<ul class="nav-items">
-				    <li><a href="#">Top</a></li>
-				    <li><a href="#">Our Farmers</a></li>
-				    <li><a class="active" href="#">Recipes</a></li>
-				    <li><a href="#">Nutrition</a></li>
-				    <li><a href="#">Cuts of Lamb</a></li>
-				    <li><a href="#">In The Kitchen</a></li>
+				    <li><a href="../index.html">Home</a></li>
+				    <li><a href="../index.html">Our Farmers</a></li>
+				    <li><a href="../index.html">Recipes</a></li>
+				    <li><a href="../index.html">Nutrition</a></li>
+				    <li><a href="../index.html">Cuts of Lamb</a></li>
+				    <li><a href="../index.html">In The Kitchen</a></li>
 				</ul>				
 			</div>
 
@@ -146,7 +146,25 @@
 
 	<script src="../js/jquery-3.1.1.min.js"></script>
 	<script src="../js/slick.min.js"></script>
-	<script src="../js/main.js"></script>
+	<script type="text/javascript">
+		// Init Mobile Controls
+
+		function initMobileMenu() {
+		 $('#triggerMobileMenu').on('click', function(){
+		   $('.nav-wrap').toggleClass('active');
+		   $('main').toggleClass('blur');
+		   });
+		}
+		initMobileMenu();
+
+		function hamburgerAnimate() {
+		 $('.hamburger').on('click', function(){
+		   $(this).toggleClass('is-active');
+		   });
+		}
+		hamburgerAnimate();
+
+	</script>
 </body>
 </html>
 

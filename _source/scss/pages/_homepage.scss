@@ -52,7 +52,9 @@
   padding: 8.0rem 3.0rem;
 
   @include MQ(XS) {
-    padding: 8.0rem 0;
+    // padding: 8.0rem 0;
+    padding: 5vh 0;
+
   }
 }
 
