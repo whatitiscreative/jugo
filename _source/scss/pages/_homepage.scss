@@ -1,6 +1,6 @@
 .landing {
   min-height: calc(100vh - 50px);
-  height: calc(100vh - 50px);
+  // height: calc(100vh - 50px);
   background: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.15)), url('../img/SW_DominikMartin-copia-2.jpg') no-repeat center center;
   background-size: cover;
   padding-top: 50px;
@@ -19,7 +19,7 @@
 .gallery, .kitchen {
   padding: 10.0rem 0 6.0rem 0;
   min-height: calc(100vh - 200px);
-  height: calc(100vh - 200px);
+  // height: calc(100vh - 200px);
   position: relative;
 }
 
@@ -37,7 +37,7 @@
   text-align: center;
   padding: 10.0rem 0 6.0rem 0;
   min-height: calc(100vh - 200px);
-  height: calc(100vh - 200px);
+  // height: calc(100vh - 200px);
   position: relative;
 
   .btn {

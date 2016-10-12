@@ -77,11 +77,11 @@
   margin: -30px 0 -100px -20px;
   position: relative;
   z-index: 2;
-  display: none;
+  // display: none;
 
-  @include MQ(M) {
-    display: block;
-  }
+  // @include MQ(M) {
+  //   display: block;
+  // }
 
   .group-it {
     cursor: pointer;
