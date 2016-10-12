@@ -173,3 +173,15 @@ var Tabs = {
 }
 
 Tabs.init();
+
+// $(function() {
+//   $('.fadeIn').addClass('fadeIn-1s');
+// });
+
+// window.onload = function() {
+//   document.getElementsByClassName('fadeIn').className = 'fadeIn-1s';
+// };
+
+$(window).on('load', function() {
+  $(".fadeIn").addClass("fadeIn-1s");
+});

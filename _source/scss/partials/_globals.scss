@@ -115,3 +115,14 @@
     flex-direction: row-reverse;
   }
 }
+
+.fadeIn {
+  opacity: 0;
+}
+
+.fadeIn-1s {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
