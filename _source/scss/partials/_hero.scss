@@ -9,6 +9,8 @@
     height: auto;
     width: 250px;
     align-self: center;
+    display: flex;
+    flex-direction: column;
 
     @include MQ(XS) {
       height: auto;

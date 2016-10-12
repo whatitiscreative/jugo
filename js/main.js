@@ -78,7 +78,7 @@ $('.nav-items li a').on('click', function() {
 	$('main').removeClass('blur');
 
     var scrollAnchor = $(this).attr('data-scroll'),
-        scrollPoint = $('[data-anchor="' + scrollAnchor + '"]').offset().top - 50;
+        scrollPoint = $('[data-anchor="' + scrollAnchor + '"]').offset().top - 49;
 
         if ($(window).width() > 1199) {
 
