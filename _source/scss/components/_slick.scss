@@ -126,15 +126,16 @@
     width: 100%;
     position: relative;
     bottom: 5vh;
-    display: none;
+    // display: none;
+    display: flex;
 
     // @include MQ(L) {
     //     bottom: 55px;
     // }
 
-    @include MQ(M) {
-        display: flex;
-    }
+    // @include MQ(M) {
+    //     display: flex;
+    // }
 
     li {
         display: inline-block;
