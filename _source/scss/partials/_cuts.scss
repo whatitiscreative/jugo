@@ -22,6 +22,7 @@
   h1 {
     background: $color-beige;
     padding: 0 4.0rem;
+    position: relative;
   }
 }
 
@@ -40,6 +41,7 @@
 
     margin: 4.0rem 0 0 0;
     width: 100%;
+    text-align: left;
 
     @include MAX(M) {
       display: block !important;
