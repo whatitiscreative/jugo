@@ -141,3 +141,19 @@
     display: none;
   }
 }
+
+.mobile-label {
+  width: 108px;
+  height: 28px;
+  text-transform: uppercase;
+  display: block;
+  border: 1px solid $color-blue;
+  color: $color-blue;
+  line-height: 30px;
+  margin: 30px auto 60px auto;
+
+
+  @include MQ(M) {
+    display: none;
+  }
+}
