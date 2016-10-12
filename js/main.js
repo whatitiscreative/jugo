@@ -6,12 +6,16 @@ $(document).ready(function(){
 
 $('.slider-one').slick({
 	arrows: false,
-	dots: true
+	dots: true,
+  autoplay: true,
+  autoplaySpeed: 5500
 });
 
 $('.slider-two').slick({
 	arrows: false,
-	dots: true
+	dots: true,
+  autoplay: true,
+  autoplaySpeed: 5500
 });
 
 // Init Mobile Controls
