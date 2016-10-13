@@ -10,6 +10,16 @@
   height: 250px;
   margin-bottom: 3rem;
 
+  &.med-lamb {
+    background: url('../img/Mediterranean-Loin-Chops.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.kale {
+    background: url('../img/kale.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
   @include MQ(S) {
     height: 400px;
   }
