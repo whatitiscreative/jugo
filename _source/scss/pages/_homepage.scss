@@ -288,6 +288,7 @@
   .col {
     flex-grow: 1;
     padding: 1.0rem;
+    -ms-flex: 0 1 auto;
 
     &.w-border {
       border-right: 1px solid $color-black;
@@ -315,6 +316,7 @@
 
   @include MQ(S) {
     display: flex;
+    -ms-flex: 0 1 auto;
   }
 
   .col {
@@ -328,7 +330,7 @@
   p {    
     @include MQ(XS) {
       flex-grow: 2;
-
+      -ms-flex: 0 1 auto;
     }
   }
 }
