@@ -17,7 +17,8 @@
 
 .recipe {
   padding-top: 90px;
-  max-width: 1024px;
+  max-width: 980px;
+  position: relative;
 
   @include MQ(M) {
     padding-top: 60px;
@@ -84,6 +85,41 @@
       display: flex;
       flex-basis: 5%;
       max-width: 5%;
+    }
+  }
+}
+
+// .ct-ind {
+//   .cook-block {
+//     margin-bottom: 1.5rem;
+//     height: 65px;
+//     width: 65px;
+//     padding: 0 4px;
+//   }
+// }
+
+.ct-ind {
+
+  @include MAX(L) {
+    display: flex;
+  }
+
+  .cook-block {
+    padding: 0;
+    height: 65px;
+    width: 65px;
+    margin: 0 0 10px 10px;
+
+
+    @include MQ(L) {
+
+      position: absolute;
+      left: -50px;
+      margin: auto;
+
+      &:nth-child(2) {
+        top: 135px;
+      }
     }
   }
 }
