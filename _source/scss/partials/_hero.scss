@@ -11,6 +11,9 @@
     align-self: center;
     display: flex;
     flex-direction: column;
+    
+    // IE image fix
+    min-height: 1px;
 
     @include MQ(XS) {
       height: auto;
