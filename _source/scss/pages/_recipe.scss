@@ -20,6 +20,11 @@
     background-size: cover;
   }
 
+  &.lamb-stew {
+    background: url('../img/Slow Cooker Lamb Stew.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
   @include MQ(S) {
     height: 400px;
   }
