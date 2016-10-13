@@ -79,6 +79,7 @@
   .col {
     flex-basis: 95%;
     max-width: 95%;
+    -ms-flex: 0 1 auto;
 
     &:first-child {
       flex-basis: 5%;
@@ -95,6 +96,7 @@
     display: flex;
     flex-basis: 95%;
     max-width: 95%;
+    -ms-flex: 0 1 auto;
 
     &:first-child {
       display: flex;
