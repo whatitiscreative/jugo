@@ -131,4 +131,9 @@
   z-index: 10;
   right: 34px;
   top: 34px;
+  display: block;
+
+  @include MQ(M) {
+    display: none;
+  }
 }
