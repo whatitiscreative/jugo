@@ -91,20 +91,12 @@
 .step-instruction {
   margin-top: 3.0rem;
   padding: 0 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
-
 
   p {
     display: flex;
     flex-basis: 95%;
     max-width: 95%;
     -ms-flex: 0 1 auto;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-
 
     &:first-child {
       display: flex;
