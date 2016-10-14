@@ -76,10 +76,6 @@
 }
 
 .ingredients {
-  display: flex;
-  flex-direction: column;
-  -ms-flex: 0 1 auto;
-
   .col {
     flex-basis: 95%;
     max-width: 95%;
@@ -95,30 +91,25 @@
 .step-instruction {
   margin-top: 3.0rem;
   padding: 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+
 
   p {
     display: flex;
     flex-basis: 95%;
     max-width: 95%;
     -ms-flex: 0 1 auto;
-
-    _:-ms-input-placeholder, :root .selector {
-      display: inline-block;
-      float: left;
-      width: 100%;
-      max-width: 100%;
-      display: inline-block;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
 
 
     &:first-child {
       display: flex;
       flex-basis: 5%;
       max-width: 5%;
-
-      _:-ms-input-placeholder, :root .selector {
-        display: none;
-      }
     }
   }
 }
