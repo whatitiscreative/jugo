@@ -98,10 +98,22 @@
     max-width: 95%;
     -ms-flex: 0 1 auto;
 
+    _:-ms-input-placeholder, :root .selector {
+      display: inline-block;
+      float: left;
+      width: 100%;
+      max-width: 100%;
+    }
+
+
     &:first-child {
       display: flex;
       flex-basis: 5%;
       max-width: 5%;
+
+      _:-ms-input-placeholder, :root .selector {
+        display: none;
+      }
     }
   }
 }
