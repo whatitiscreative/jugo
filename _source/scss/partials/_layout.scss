@@ -42,12 +42,3 @@ footer {
   }
 }
 
-ol {
-  li {
-    &:before {
-      content: '1';
-      display: inline-block;
-      margin-right: 10px;
-    }
-  }
-}

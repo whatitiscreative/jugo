@@ -89,19 +89,37 @@
 }
 
 .step-instruction {
-  margin-top: 3.0rem;
   padding: 0 0.5rem;
+  float: left;
+  margin-bottom: 3.0rem;
+  width: 100%;
+
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   p {
-    display: flex;
-    flex-basis: 95%;
-    max-width: 95%;
-    -ms-flex: 0 1 auto;
+    // width: 95%;
+    // display: inline-block;
+    // float: left;
+    width: 90%;
+    display: inline-block;
+    float: left;
+
+    // display: flex;
+    // flex-basis: 95%;
+    // max-width: 95%;
+    // -ms-flex: 0 1 auto;
 
     &:first-child {
-      display: flex;
-      flex-basis: 5%;
-      max-width: 5%;
+      // display: flex;
+      // flex-basis: 5%;
+      // max-width: 5%;
+      width: 0;
+      display: inline-block;
+      float: left;
+      margin-right: 5%;
     }
   }
 }
