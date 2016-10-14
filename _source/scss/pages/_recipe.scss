@@ -76,6 +76,10 @@
 }
 
 .ingredients {
+  display: flex;
+  flex-direction: column;
+  -ms-flex: 0 1 auto;
+
   .col {
     flex-basis: 95%;
     max-width: 95%;
