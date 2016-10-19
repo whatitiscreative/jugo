@@ -80,22 +80,6 @@
   padding: 0;
 }
 
-.yellow-ind {
-  height: 0.6rem;
-  width: 0.6rem;
-  background: $color-yellow;
-  border-radius: 50%;
-  position: absolute;
-  left: -12px;
-  top: 10px;
-
-  display: none;
-
-  @include MQ(L) {
-    display: block;
-  }
-}
-
 .border-yellow {
   border-bottom: 0;
   padding-top: 5px;

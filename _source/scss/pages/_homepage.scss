@@ -1,5 +1,4 @@
 .landing {
-  // min-height: calc(100vh - 50px);
   height: calc(100vh - 50px);
   background: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.15)), url('../img/SW_DominikMartin-copia-2.jpg') no-repeat center center;
   background-size: cover;
@@ -17,36 +16,31 @@
 }
 
 .gallery, .kitchen {
-  padding: 10.0rem 0 6.0rem 0;
   min-height: calc(100vh - 200px);
-  // height: calc(100vh - 200px);
+  padding: 10.0rem 0 6.0rem 0;
   position: relative;
 }
 
 .gallery {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
 .farmers-gallery, .nutrition-gallery {
   display: flex !important;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
-  padding: 10.0rem 0 6.0rem 0;
-  // min-height: calc(100vh - 200px);
   height: calc(100vh - 200px);
+  justify-content: center;
+  padding: 10.0rem 0 6.0rem 0;
   position: relative;
-
-  // min-height: calc(100vh - 5vh);
-
+  text-align: center;
 
   .btn {
     @include MAX(XS) {
-      max-width: 200px;
       margin: auto;
+      max-width: 200px;
     }
   }
 }
@@ -55,22 +49,19 @@
   padding: 2.5vh 3.0rem;
 
   @include MQ(XS) {
-    // padding: 8.0rem 0;
     padding: 5vh 0;
 
   }
 }
 
 .cooking-instructions {
-  border: 15px solid $color-white;
   background: $color-white;
+  border: 15px solid $color-white;
 
   h5 {
     background: $color-black;
-
     padding: 2.2rem;
   }
-
 }
 
 .instruction-inner {
@@ -85,19 +76,16 @@
     border-left: 2px solid $color-black;
     border-right: 1px solid $color-black;
 
-
     @include MQ(L) {
-      border-right: 0;
       border-left: 2px solid $color-black;
+      border-right: 0;
       padding: 50px;
-
     }
   }
 
   &.right {
-    border-right: 2px solid $color-black;
     border-left: 2px solid $color-black;
-
+    border-right: 2px solid $color-black;
 
     @include MQ(S) {
       border-left: 0;
@@ -108,9 +96,9 @@
 
 .instruction {
   border: 1px solid $color-yellow;
+  margin-bottom: 4.0rem;
   padding: 1.0rem 2.6rem 1.0rem 2.6rem;
   position: relative;
-  margin-bottom: 4.0rem;
 
   @include MQ(S) {
     min-height: 185px;
@@ -129,6 +117,23 @@
       &.small {
         margin-bottom: 1.5rem;
 
+        &:before {
+          content: '';
+          height: 0.6rem;
+          width: 0.6rem;
+          background: $color-yellow;
+          border-radius: 50%;
+          position: absolute;
+          left: -12px;
+          top: 8px;
+
+          display: none;
+
+          @include MQ(L) {
+            display: block;
+          }
+        }
+
         @include MQ(L) {
           line-height: 1.8;
         }
@@ -137,10 +142,10 @@
   }
 
   &.featured {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     border: 1px solid $color-white;
+    display: flex;
+    flex-direction: row;
     padding-left: 0;
 
     @include MAX(S) {
@@ -149,22 +154,21 @@
   }
 }
 
-
 .flex-middle {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 
 .yellow-icon {
-  height: 4.6rem;
-  width: 4.6rem;
   display: flex;
+  display: none;
+  height: 4.6rem;
+  left: -24px;
   position: absolute;
   top: -24px;
-  left: -24px;
-  display: none;
+  width: 4.6rem;
 
   @include MQ(L) {
     display: block;
@@ -177,20 +181,19 @@
   }
 
   .img-wrap {
-    min-height: 100px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
   }
 
   img {
-    display: flex;
-    align-self: center;
     align-items: center;
+    align-self: center;
+    display: flex;
     margin: auto;
   }
-
 }
 
 .hide-mobile {
@@ -203,7 +206,7 @@
   margin: 3.0rem 0;
 
   @include MQ(S) {
-    margin: 0 0 3.0rem 0;
+    margin: 0 0 4.0rem 0;
   }
 
   @include MQ(XS) {
@@ -234,9 +237,8 @@
 }
 
 .cooking-graph {
-  border: 15px solid $color-white;
   background: $color-white;
-  // min-height: 100vh;
+  border: 15px solid $color-white;
 }
 
 .cg-inner {
@@ -253,22 +255,12 @@
 .col-row {
   display: flex;
   flex-basis: 100%;
-  max-width: 100%;
   flex-direction: column;
+  max-width: 100%;
 
   &:last-child {
     border-bottom: 0;
   }
-
-  // .col {
-  //   min-height: 85px;
-  // }
-
-  // &:first-child {
-  //   .col {
-  //     min-height: 185px;
-  //   }
-  // }
 
   &.w-border {
     border-top: 1px solid $color-black;
@@ -334,7 +326,6 @@
     }
   }
 }
-
 
 @include MAX(S) {
   .cg-title {

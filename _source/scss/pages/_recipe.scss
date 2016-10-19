@@ -1,7 +1,7 @@
 .recipe-template {
   min-height: calc(100vh - 150px);
-  padding-top: 50px;
   padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 .recipe-img {
@@ -25,14 +25,34 @@
     background-size: cover;
   }
 
+  &.cumin-rack-lamb {
+    background: url('../img/Grilled Rack of Lamb with White Bean Salad.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.lamb-pizza {
+    background: url('../img/Lamb-Pizza-with-Arugula.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.lamb-burger {
+    background: url('../img/Classic Lamb Burger_Horiz.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.med-style-lamb-burger {
+    background: url('../img/Weber Restaurant Mediterranean Lamb Burger Horiz.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
   @include MQ(S) {
     height: 400px;
   }
 }
 
 .recipe {
-  padding-top: 90px;
   max-width: 980px;
+  padding-top: 90px;
   position: relative;
 
   @include MQ(M) {
@@ -47,11 +67,10 @@
 }
 
 .ingredient-text {
-  padding: 0.5rem 0;
-  border-top: 1px solid $color-green;
   border-bottom: 1px solid $color-green;
+  border-top: 1px solid $color-green;
   margin-bottom: 3rem;
-  // margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
 }
 
 .spacer {
@@ -59,10 +78,10 @@
 }
 
 .recipe-title {
-  font-size: 3.0rem;
-  font-family: $font-tertiary-bold;
-  padding: 2.0rem 0;
   border-top: 5px solid $color-black;
+  font-family: $font-tertiary-bold;
+  font-size: 3.0rem;
+  padding: 2.0rem 0;
 }
 
 @include MQ(XS) {
@@ -77,9 +96,9 @@
 
 .ingredients {
   .col {
+    -ms-flex: 0 1 auto;
     flex-basis: 95%;
     max-width: 95%;
-    -ms-flex: 0 1 auto;
 
     &:first-child {
       flex-basis: 5%;
@@ -94,44 +113,23 @@
   margin-bottom: 3.0rem;
   width: 100%;
 
-
   &:last-child {
     margin-bottom: 0;
   }
 
   p {
-    // width: 95%;
-    // display: inline-block;
-    // float: left;
-    width: 90%;
     display: inline-block;
     float: left;
-
-    // display: flex;
-    // flex-basis: 95%;
-    // max-width: 95%;
-    // -ms-flex: 0 1 auto;
+    width: 90%;
 
     &:first-child {
-      // display: flex;
-      // flex-basis: 5%;
-      // max-width: 5%;
-      width: 0;
       display: inline-block;
       float: left;
       margin-right: 5%;
+      width: 0;
     }
   }
 }
-
-// .ct-ind {
-//   .cook-block {
-//     margin-bottom: 1.5rem;
-//     height: 65px;
-//     width: 65px;
-//     padding: 0 4px;
-//   }
-// }
 
 .ct-ind {
 
@@ -140,20 +138,22 @@
   }
 
   .cook-block {
-    padding: 0;
     height: 65px;
-    width: 65px;
     margin: 0 0 10px 10px;
-
+    padding: 0;
+    width: 65px;
 
     @include MQ(L) {
-
-      position: absolute;
       left: -50px;
       margin: auto;
+      position: absolute;
 
       &:nth-child(2) {
         top: 135px;
+      }
+
+      &:nth-child(3) {
+        top: 211px;
       }
     }
   }

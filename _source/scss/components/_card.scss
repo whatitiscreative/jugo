@@ -19,6 +19,10 @@
     h3 {
       padding-top: 0.5rem;
       font-size: 1.6rem;
+      font-family: $font-secondary;
+      font-style: normal;
+      font-weight: 100;
+      letter-spacing: 1px;
 
       @include MQ(S) {
         font-size: 2.2rem;
@@ -48,7 +52,6 @@
       background: rgba($color-green, .75);
       opacity: 0;
     }
-
 
     p {
       font-size: 1.8rem;

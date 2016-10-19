@@ -1,16 +1,16 @@
 .hero {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 
   .image {
-    height: auto;
-    width: 250px;
-    margin: 0 auto;
     align-self: center;
     display: flex;
     flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    width: 250px;
 
     // IE image fix
     min-height: 1px;
@@ -21,8 +21,8 @@
 
     @include MQ(XS) {
       height: auto;
-      width: 50vh;
       max-width: 450px;
+      width: 50vh;
     }
   }
 
@@ -30,32 +30,3 @@
   	color: $color-white;
   }
 }
-
-
-// .test {
-//   cursor: pointer;
-
-//   &:hover {
-//     fill: $color-blue;
-
-//     path {
-//       stroke: $color-white;
-
-//     }
-//   }
-// }
-
-// .hindeshank {
-//   path {
-//     fill: $color-blue;
-//   }
-// }
-
-// .rect {
-//   height: 200px;
-//   cursor: pointer;
-
-//   &:hover {
-//     fill: $color-blue;
-//   }
-// }
