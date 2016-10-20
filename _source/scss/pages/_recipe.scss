@@ -45,6 +45,36 @@
     background-size: cover;
   }
 
+  &.lamb-loin-chops {
+    background: url('../img/Mediterranean-Loin-Chops.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.lamb-veggie-kabob {
+    background: url('../img/Grilled Lamb and Vegetable Kabobs.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.lamb-shanks {
+    background: url('../img/Lamb Shank with White Beans.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.butterflied {
+    background: url('../img/Grilled Butterflied Leg of Lamb.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.peach {
+    background: url('../img/Grilled Lamb and Vegetable Kabobs.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.farro {
+    background: url('../img/Grilled Lamb and Vegetable Kabobs.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
   @include MQ(S) {
     height: 400px;
   }
@@ -84,15 +114,15 @@
   padding: 2.0rem 0;
 }
 
-@include MQ(XS) {
-  .recipe {
-    .col-xs-12 {
-      &:first-child {
-        margin-bottom: 60px;
-      }
-    }
-  }
-}
+// @include MQ(XS) {
+//   .recipe {
+//     .col-xs-12 {
+//       &:first-child {
+//         margin-bottom: 60px;
+//       }
+//     }
+//   }
+// }
 
 .ingredients {
   .col {
