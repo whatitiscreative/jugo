@@ -1,138 +1,169 @@
-// Navigation
-// ------------------------------------------------------------------------------------------------
+// // Navigation
+// // ------------------------------------------------------------------------------------------------
 
-.nav-wrap {
-	align-items: center;
-	background: rgba($color-blue, .95);
-	bottom: 0;
+nav {
 	display: flex;
-	height: 100%;
-	overflow: scroll;
-	position: fixed;
-	right: 0;
-	transform: translateX(100%);
-	width: 100%;
-	z-index: 99;
-	text-align: center;
+	flex-direction: column;
+	padding: 0 3.0rem;
+	height: 50px;
+	background: $color-black;
 
-	@include global-transition;
-
-	&.active {
-		@include global-transition;
-		transform: translateX(0);
-	}
-
-	@include MQ(M) {
-		background: $color-white;
+	.logo {
 		display: flex;
-		flex-direction: row;
-		flex: inherit;
-		height: inherit;
-		overflow: auto;
-		padding: 0;
-		position: relative;
-		width: auto;
-		z-index: inherit;
-		transform: translateX(0);
-	}
-}
+		margin: auto 0;
 
-.nav-items {
-	width: 100%;
-
-	li {
-		color: $color-white;
-		font-size: 2.6rem;
-		margin: 2.5rem 0;
-		position: relative;
-		text-transform: uppercase;
-		font-family: $font-tertiary;
-
-
-	}
-
-
-	@include MQ(M) {
-		display: flex;
-		flex-direction: row;
-		flex: inherit;
-		width: auto;
-
-		li {
-			align-items: center;
-			display: flex;
-			flex-direction: column;
-			font-size: 1.3rem;
-			height: 50px;
-			margin: 0 20px;
-			color: $color-black;
-
-			&:hover {
-				color: $color-blue;
-			}
-
-
-			a {
-				align-items: center;
-				display: flex;
-				height: 50px;
-				position: relative;
-
-				&.active {			
-					&:before {
-						background: $color-black;
-						content: '';
-						height: 8px;
-						position: absolute;
-						top: 0;
-						width: 100%;
-					}
-				}
-			}
+		a {
+			font-weight: bold;
+			color: $color-white;
+			font-size: 1.6rem;
+			font-family: $font-primary;
 		}
 	}
-
-	@include MQ(M) {
-		font-size: 1.4rem;
-	}
 }
 
-
-.lamb-icon {
-  display: flex;
-  padding-left: 5px;
-  // position: relative;
-  // z-index: 100;
-
-  img {
-    height: 46px;
-    width: 79px;
-  }
-}
-
-.social-icons {
-	display: none;
+.logo {
+	position: absolute;
+	left: 3.0rem;
+	top: 3.0rem;
+	z-index: 1;
 
 	a {
-		display: flex;
-		&:hover {
-			svg {
-
-				.cls-1 {
-				    fill: $color-blue;
-				}
-			}
-		}
-	}
-
-	svg {
-		height: 22px;
-		width: 22px;
-		margin: 0 0.5rem;
-	}
-
-	@include MQ(M) {
-		display: flex;
+		font-weight: bold;
+		color: $color-black;
+		font-size: 2.6rem;
+		font-family: $font-secondary;
 	}
 }
+
+// nav {
+// 	align-items: center;
+// 	background: rgba($color-blue, .95);
+// 	bottom: 0;
+// 	display: flex;
+// 	height: 100%;
+// 	overflow: scroll;
+// 	position: fixed;
+// 	right: 0;
+// 	transform: translateX(100%);
+// 	width: 100%;
+// 	z-index: 99;
+// 	text-align: center;
+// 	@include global-transition;
+
+// 		&.active {
+// 			@include global-transition;
+// 			transform: translateX(0);
+// 		}
+
+// }
+
+
+// .nav-wrap {
+// 	align-items: center;
+// 	background: rgba($color-blue, .95);
+// 	bottom: 0;
+// 	display: flex;
+// 	height: 100%;
+// 	overflow: scroll;
+// 	position: fixed;
+// 	right: 0;
+// 	transform: translateX(100%);
+// 	width: 100%;
+// 	z-index: 99;
+// 	text-align: center;
+
+// 	@include global-transition;
+
+// 	&.active {
+// 		@include global-transition;
+// 		transform: translateX(0);
+// 	}
+
+// 	@include MQ(M) {
+// 		background: $color-blue;
+// 		display: flex;
+// 		flex-direction: row;
+// 		flex: inherit;
+// 		height: inherit;
+// 		overflow: auto;
+// 		padding: 0;
+// 		position: relative;
+// 		width: auto;
+// 		z-index: inherit;
+// 		transform: translateX(0);
+// 	}
+// }
+
+// .nav-items {
+// 	width: 100%;
+
+// 	li {
+// 		color: $color-white;
+// 		font-size: 2.6rem;
+// 		margin: 2.5rem 0;
+// 		position: relative;
+// 		text-transform: uppercase;
+// 	}
+
+
+// 	@include MQ(M) {
+// 		display: flex;
+// 		flex-direction: row;
+// 		flex: inherit;
+// 		width: auto;
+
+// 		li {
+// 			align-items: center;
+// 			display: flex;
+// 			flex-direction: column;
+// 			font-size: 1.3rem;
+// 			height: 50px;
+// 			margin: 0 20px;
+// 			color: $color-white;
+
+// 			&:hover {
+// 				color: $color-red;
+// 			}
+
+// 			a {
+// 				align-items: center;
+// 				display: flex;
+// 				height: 50px;
+// 				position: relative;
+// 			}
+// 		}
+// 	}
+
+// 	@include MQ(M) {
+// 		font-size: 1.4rem;
+// 	}
+// }
+
+
+// .social-icons {
+// 	display: none;
+
+// 	a {
+// 		display: flex;
+// 		&:hover {
+// 			svg {
+
+// 				.cls-1 {
+// 				    fill: $color-blue;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	svg {
+// 		height: 22px;
+// 		width: 22px;
+// 		margin: 0 0.5rem;
+// 	}
+
+// 	@include MQ(M) {
+// 		display: flex;
+
+// 	}
+// }
 

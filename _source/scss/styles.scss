@@ -7,7 +7,6 @@
 
 // Import typical layout styles
 @import 		'base/flexbox-grid',
-				'base/grid',
 				'base/responsive',
 				'base/type';
 
@@ -16,27 +15,16 @@
 @import 		'components/nav',
 				'components/buttons',
 				'components/forms',
-				'components/media',
-				'components/tabs',
-				'components/indicator',
-				'components/slick',
 				'components/hamburger',
-				'components/card';
-
+				'components/triangle-effect';
 
 // Import Partials
+
 @import 		'partials/layout',
 				'partials/hero',
-				'partials/globals',
-				'partials/cuts';
+				'partials/globals';
 
 // Import Pages
-@import 		'pages/homepage',
-				'pages/recipe';
+@import 		'pages/homepage';
 
 // Specific project styles, add any section specific sass modules here (Pages)
-
-body {
-	background: $color-white;
-	font-family: $font-primary;
-}

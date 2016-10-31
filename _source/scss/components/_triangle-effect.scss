@@ -1,0 +1,73 @@
+figure {
+  cursor: pointer;
+}
+
+.triangle-effect {
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-50%,-50%,0);
+    transform-origin: 50%;
+  }
+
+  .text-wrap {
+    width: 25vw;
+    text-transform: none;
+    line-height: 2;
+    margin: 0 auto;
+  }
+
+  a {
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+    font-size: 4.5vmin;
+    color: $color-red;
+    text-transform: uppercase;
+    display: block;
+
+    &:hover, &:focus {
+      color: $color-blue;
+    }
+  }
+
+  figcaption {
+
+    &::before {
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
+      width: 50vmin;
+      min-height: 50vmin;
+      max-height: 50vmin;
+      border: 5px solid $color-red;
+      content: '';
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+      transform-origin: 50%;
+    }
+  }
+
+  &:hover {
+    figcaption {
+
+      &::before {
+        opacity: 1;
+        transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1);
+      }
+    }
+
+    h1 {
+      opacity: 0;
+      transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+    }
+
+    a {
+      transform: translate3d(0,0,0) scale3d(1,1,1);
+      opacity: 1;
+    }
+  }
+}
