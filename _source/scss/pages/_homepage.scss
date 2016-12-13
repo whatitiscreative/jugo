@@ -20,6 +20,10 @@
   }
 }
 
+.coming-soon {
+  margin-bottom: 7.0rem;
+}
+
 .img-wrap {
   max-width: 391px;
   height: auto;
@@ -33,5 +37,11 @@
 
 .link-wrap {
   max-width: 140px;
-  margin: 0 auto;
+  margin: 8.0rem auto 0 auto;
+
+  a {
+    &:first-child {
+      margin-bottom: 2.0rem;
+    }
+  }
 }
