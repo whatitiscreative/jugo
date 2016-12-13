@@ -3,26 +3,4 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
-  .image {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin: 0 auto;
-    width: 250px;
-
-    // IE image fix
-    min-height: 1px;
-
-    img {
-      min-height: 1px;
-    }
-
-    @include MQ(XS) {
-      height: auto;
-      max-width: 450px;
-      width: 50vh;
-    }
-  }
 }
