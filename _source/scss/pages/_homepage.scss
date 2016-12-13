@@ -19,3 +19,19 @@
     margin: auto;
   }
 }
+
+.img-wrap {
+  max-width: 391px;
+  height: auto;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.link-wrap {
+  max-width: 140px;
+  margin: 0 auto;
+}
