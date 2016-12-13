@@ -2,7 +2,8 @@
 // ------------------------------------------------------------------------------------------------
 
 main {
-  background: $color-beige;
+  background: $color-white;
+  min-height: 100vh;
 }
 
 // Header
@@ -31,7 +32,7 @@ header {
 // ------------------------------------------------------------------------------------------------
 
 footer {
-  background: white;
+  background: $color-white;
   height: 185px;
   padding: 20px 0;
 
