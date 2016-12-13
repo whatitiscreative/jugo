@@ -71,9 +71,10 @@ p {
 
 a {
   @include global-transition;
-  border-bottom: 1px solid $color-black;
+  border-bottom: 2px solid $color-black;
   cursor: pointer;
   display: inline-block;
+  font-family: $font-primary;
   font-size: 1.4rem;
   letter-spacing: 2px;
   padding-bottom: 7px;
@@ -83,7 +84,7 @@ a {
   &:hover,
   &:focus {
     @include global-transition;
-    border-bottom: 1px solid $color-blue;
+    border-bottom: 2px solid $color-blue;
     color: $color-blue;
     text-decoration: none;
   }
