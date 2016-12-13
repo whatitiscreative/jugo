@@ -1,18 +1,21 @@
-.landing {
-  // height: calc(100vh - 50px);
-  height: 100vh;
-  background-size: cover;
-  background: $color-yellow;
-  // background: url('http://unsplash.it/1200x800') center center no-repeat;
+.landing, .projects {
+  min-height: 100vh;
+}
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to top right, $color-yellow, $color-red);
-    opacity: .15; 
+.projects {
+  padding: 18rem 0 10rem 0sub;
+  .row {
+    margin-bottom: 1.0rem;
+  }
+}
+
+.project {
+  height: 350px;
+  background: $color-black;
+  color: $color-white;
+  display: flex;
+
+  p {
+    margin: auto;
   }
 }
