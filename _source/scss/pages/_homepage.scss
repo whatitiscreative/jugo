@@ -9,13 +9,29 @@ main {
 }
 
 .coming-soon {
-  margin-bottom: 7.0rem;
+  margin-bottom: 7vh;
 }
 
 .img-wrap {
   max-width: 391px;
   height: auto;
   margin: 0 auto;
+
+  object {
+    height: 25.6vh;
+
+    // @media screen and (orientation:portrait) {
+    //   height: 165px;
+    // }
+
+    // @media screen and (orientation:landscape) {
+    //   height: 324px;
+    // }
+
+    @include MQ(XS) {
+      height: 31vh;
+    }
+  }
 
   img {
     max-width: 100%;
@@ -25,11 +41,11 @@ main {
 
 .link-wrap {
   max-width: 140px;
-  margin: 8.0rem auto 0 auto;
+  margin: 8vh auto 0 auto;
 
   a {
     &:first-child {
-      margin-bottom: 2.0rem;
+      margin-bottom: 2vh;
     }
   }
 }
