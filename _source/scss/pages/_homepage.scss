@@ -6,6 +6,22 @@ main {
   background: url('../img/jugo-flora-pattern-landscape.png') no-repeat center center;
   background-size: cover;
 
+  @media only screen and (max-device-width : 767px) and (orientation : landscape) {
+    min-height: 100vh;
+    background: url('../img/jugo-flora-pattern-landscape.png') no-repeat center center;
+    background-size: cover;
+  }
+
+  @media only screen and (max-device-width : 767px) and (orientation : portrait) {
+    min-height: 100vh;
+    background: url('../img/jugo-flora-pattern-portrait.png') no-repeat center center;
+    background-size: cover;
+  }
+
+  p {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .coming-soon {
@@ -45,7 +61,7 @@ main {
 
   a {
     &:first-child {
-      margin-bottom: 2vh;
+      margin-bottom: 1.7vh;
     }
   }
 }

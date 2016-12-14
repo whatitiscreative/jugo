@@ -79,11 +79,11 @@ p {
 
 a {
   @include global-transition;
-  border-bottom: 2px solid $color-black;
+  border-bottom: 1px solid $color-black;
   cursor: pointer;
   display: inline-block;
   font-family: $font-primary;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   letter-spacing: 2px;
   padding-bottom: 7px;
   text-decoration: none;
