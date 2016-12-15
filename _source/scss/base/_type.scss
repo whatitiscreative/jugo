@@ -59,8 +59,12 @@ h5 {
 
 p {
   font-family: $font-primary;
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   letter-spacing: 2px;
+
+  @include MQ(XS) {
+    font-size: 2.2rem;
+  }
 
   &.small {
     font-family: $font-primary-light;
