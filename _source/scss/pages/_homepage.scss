@@ -44,8 +44,15 @@ main {
 }
 
 .link-wrap {
-  max-width: 140px;
-  margin: 8vh auto 0 auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 8vh;
+  display: flex;
+  justify-content: center;
+
+  .links {
+    max-width: 140px;
+  }
 
   a {
     &:first-child {
