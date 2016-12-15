@@ -25,9 +25,13 @@ main {
 }
 
 .img-wrap {
-  max-width: 391px;
-  height: auto;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .img {
+    max-width: 391px;
+  }
 
   object {
     height: 25.6vh;
